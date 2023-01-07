@@ -184,8 +184,32 @@ to("#text .t1 .h1s h1",{
 
 }
 
+function swiper1(){
+    var swiper1 = new Swiper(".mySwiper1", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        autoplay:{
+            delay: 1000,
+            disableOnInteraction:false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+}
+
 loco();
 swiper();
+swiper1();
 cards();
 videobutton();
 scrolltext();

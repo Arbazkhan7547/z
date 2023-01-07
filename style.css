@@ -34,7 +34,7 @@ html,body{
 
 #part1{
     width: 100%;
-    height: 110vh;
+    height: 130vh;
     background-color: #E8E5E3;
     position: relative;
     z-index: 9999;
@@ -94,7 +94,6 @@ html,body{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    margin-top: 2vw;
     padding: 2vw 2.5vw;
 }
 #part1 #text h1{
@@ -102,13 +101,13 @@ html,body{
     line-height: 1;
     font-weight: 600;
     font-family: Nuckle,sans-serif;
-    font-size: 7.5vw;
+    font-size: 6vw;
 }
 #part1 #text .t1 .h1s{
     position: relative;
     overflow: hidden;
     width: 40vw;
-    height: 20vh;
+    height: 15vh;
 }
 #part1 #text .t1 .h1s h1{
     position:absolute;
@@ -125,13 +124,34 @@ html,body{
     border-radius: 50%;
 }
 #part1 #btext{
-    padding: 3vw 2vw;
-    display: flex;
-    height: 28vh;
-    justify-content: flex-end;
-    flex-direction: column;
-    align-items: flex-end;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+  position: relative;
+
 }
+
+/* swiper js code */
+
+
+.swiper1 {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper1 .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+/* swiper code end */
 #part1 #btext p{
     width: 35%;
     text-align: right;
@@ -201,6 +221,7 @@ html,body{
     height: calc(100%/3);
     background-image: url(https://assets.website-files.com/62838db5e5cc597190f9a798/63891d3371019d75ce50e05a_shopify-web-design-featured-works.webp);
     background-size: cover;
+    background-position:bottom center;
 }
 #left  .l2{
     width: 100%;
@@ -216,6 +237,7 @@ html,body{
     height: calc(100%/3);
     background-image: url(https://assets.website-files.com/62838db5e5cc597190f9a798/63891d337a2bf70dcb51703e_webflow-web-development-ecommerce-store.webp);
     background-size: cover;
+    background-position: top;
 }
 
 #center_main{
@@ -242,7 +264,6 @@ html,body{
     background-color: rgb(93, 85, 100);
     background-image: url(https://assets.website-files.com/62838db5e5cc597190f9a798/63891df9f2658fc7ab572633_webflow-skincare-ecommerce-portfolio.webp);
     background-size: cover;
-
 }
 #center  .c3{
     position: relative;
@@ -769,7 +790,7 @@ html,body{
  @media (max-width:500px){
     
     #part1{
-        height: 80vh;
+        height: 100vh;
     }
        #nav a,#h3{
         display: none;
